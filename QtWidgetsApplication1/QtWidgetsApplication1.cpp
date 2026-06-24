@@ -29,6 +29,9 @@ QtWidgetsApplication1::QtWidgetsApplication1(QWidget *parent)
 
     connect(ui.pushEliminar, &QPushButton::clicked,
         this, &QtWidgetsApplication1::EliminarDeLaLista);
+
+    connect(ui.pushActualizar, &QPushButton::clicked,
+        this, &QtWidgetsApplication1::actualizar);
 }
 
 void QtWidgetsApplication1::closeEvent(QCloseEvent* event) {
