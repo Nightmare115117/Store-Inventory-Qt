@@ -141,7 +141,7 @@ void QtWidgetsApplication1::EliminarDeLaLista() {
 
 void QtWidgetsApplication1::actualizar() {
     bool ok;
-    int id = ui.lineBuscar->text().toInt(ok);
+    int id = ui.lineBuscar->text().toInt(&ok);
 
     if (!ok) {
         QMessageBox::critical(this, "Error", "Datos incorrectos, intente de nuevo");
